@@ -11,7 +11,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-link.streamlit.app)
 
-> (https://sandhyaeluri-secure-chat.streamlit.app)
+> (https://secure-chat-application-jkjacwfpvtgxykhhjrukfy.streamlit.app/)
 
 ---
 
