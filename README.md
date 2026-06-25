@@ -54,7 +54,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 **Step 1 — Clone the repository**
 ```bash
-git clone https://github.com/YOUR-USERNAME/secure-chat-application.git
+git clone https://github.com/sandhyaeluri/secure-chat-application.git
 cd secure-chat-application
 ```
 
