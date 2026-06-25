@@ -136,4 +136,7 @@ secure-chat-application/
 **Eluri Sandhya**  
 MCA — Kakinada Institute of Engineering & Technology, JNTU-K  
 📧 sandhyaeluri26@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)
+🔗 [LinkedIn]www.linkedin.com/in/
+sandhya-eluri-b7a0b8347
+Vanity URL name
+
