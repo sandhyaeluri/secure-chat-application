@@ -46,7 +46,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 | Chat Window | Encryption Demo |
 |---|---|
-| ![Chat Window](Screenshot/chat_window.png) | ![Encryption Demo](Screenshot/encryption_demo.png) |
+| ![Chat Window](screenshots/Screenshot%20chat_window.png) | ![Encryption Demo](screenshots/Screenshot%20encryption_demo.png) |
 
 ---
 
