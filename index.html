@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Chat Application — Eluri Sandhya</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #111; padding: 24px 16px; }
+    .container { max-width: 780px; margin: 0 auto; }
+    .hero { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+    .hero-top { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+    .icon-box { width: 52px; height: 52px; border-radius: 50%; background: #E6F1FB; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+    .hero-title { font-size: 20px; font-weight: 600; margin-bottom: 4px; }
+    .hero-sub { font-size: 13px; color: #666; margin-bottom: 10px; }
+    .badge { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 3px 10px; border-radius: 20px; font-weight: 500; margin-right: 6px; }
+    .badge-blue { background: #E6F1FB; color: #0C447C; }
+    .badge-green { background: #EAF3DE; color: #27500A; }
+    .badge-teal { background: #E1F5EE; color: #085041; }
+    .hero-desc { font-size: 14px; color: #444; line-height: 1.7; margin-top: 12px; }
+    .link-row { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; padding: 9px 18px; border-radius: 8px; text-decoration: none; font-weight: 500; cursor: pointer; }
+    .btn-primary { background: #185FA5; color: #fff; }
+    .btn-primary:hover { background: #0C447C; }
+    .btn-secondary { background: #f5f5f5; color: #111; border: 1px solid #ddd; }
+    .btn-secondary:hover { background: #ebebeb; }
+    .metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+    .metric { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px; }
+    .metric-label { font-size: 12px; color: #888; margin-bottom: 4px; }
+    .metric-value { font-size: 17px; font-weight: 600; color: #111; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 18px; }
+    .card-title { font-size: 14px; font-weight: 600; color: #111; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .tech-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .tech-pill { font-size: 12px; padding: 3px 10px; border-radius: 20px; background: #f5f5f5; color: #555; border: 1px solid #e0e0e0; }
+    .flow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .flow-step { background: #f5f5f5; border: 1px solid #e0e0e0; border-radius: 6px; padding: 5px 10px; font-size: 12px; }
+    .flow-arrow { color: #aaa; font-size: 14px; }
+    .test-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .test-item { background: #f5f5f5; border-radius: 6px; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+    .test-name { color: #555; }
+    .test-pass { color: #27500A; font-weight: 600; }
+    .bullet-list { list-style: none; }
+    .bullet-list li { font-size: 13px; color: #555; padding: 7px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: flex-start; gap: 8px; line-height: 1.6; }
+    .bullet-list li:last-child { border-bottom: none; }
+    .bullet-icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .footer { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 13px; color: #777; }
+    .section-label { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+    @media (max-width: 600px) {
+      .metric-grid { grid-template-columns: repeat(2, 1fr); }
+      .two-col { grid-template-columns: 1fr; }
+      .test-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-top">
+        <div class="icon-box">🔐</div>
+        <div>
+          <div class="hero-title">Secure Chat Application</div>
+          <div class="hero-sub">MCA Final Year Project · KIET, JNTU-K · 2024–2025</div>
+          <div>
+            <span class="badge badge-green">✅ E2E Encrypted</span>
+            <span class="badge badge-blue">🚀 Live Deployed</span>
+            <span class="badge badge-teal">⚡ Load Tested</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-desc">
+        A real-time end-to-end encrypted chat application built with Python and Streamlit.
+        Messages are encrypted using <strong>Fernet (AES-128-CBC)</strong> and the session key
+        is exchanged securely using <strong>RSA-2048</strong> asymmetric encryption —
+        so no one in between can read your messages.
+      </div>
+      <div class="link-row">
+        <a class="btn btn-primary" href="https://secure-chat-application-jkjacwfpvtgxykhhjrukfy.streamlit.app/" target="_blank">▶ Live Demo</a>
+        <a class="btn btn-secondary" href="https://github.com/sandhyaeluri/secure-chat-application" target="_blank">⚙ View on GitHub</a>
+      </div>
+    </div>
+
+    <!-- METRICS -->
+    <div class="metric-grid">
+      <div class="metric"><div class="metric-label">Encryption</div><div class="metric-value">AES-128</div></div>
+      <div class="metric"><div class="metric-label">Key Exchange</div><div class="metric-value">RSA-2048</div></div>
+      <div class="metric"><div class="metric-label">Load Tested</div><div class="metric-value">1,000 users</div></div>
+      <div class="metric"><div class="metric-label">Response Time</div><div class="metric-value">220ms avg</div></div>
+    </div>
+
+    <!-- TWO COLUMNS -->
+    <div class="two-col">
+      <div class="card">
+        <div class="card-title">⚙️ Tech Stack</div>
+        <div class="tech-row">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Streamlit</span>
+          <span class="tech-pill">Fernet (AES)</span>
+          <span class="tech-pill">RSA-2048</span>
+          <span class="tech-pill">MySQL</span>
+          <span class="tech-pill">bcrypt</span>
+          <span class="tech-pill">JWT</span>
+          <span class="tech-pill">Apache JMeter</span>
+        </div>
+        <div class="section-label">Encryption Flow</div>
+        <div class="flow">
+          <div class="flow-step">User types</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Fernet encrypts</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Travels as cipher</div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">Receiver decrypts</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">✅ Testing Results</div>
+        <div class="test-grid">
+          <div class="test-item"><span class="test-name">Message encryption</span><span class="test-pass">100% ✓</span></div>
+          <div class="test-item"><span class="test-name">JWT + bcrypt</span><span class="test-pass">Pass ✓</span></div>
+          <div class="test-item"><span class="test-name">SQL injection</span><span class="test-pass">Blocked ✓</span></div>
+          <div class="test-item"><span class="test-name">XSS prevention</span><span class="test-pass">Blocked ✓</span></div>
+          <div class="test-item"><span class="test-name">1,000 users load</span><span class="test-pass">Stable ✓</span></div>
+          <div class="test-item"><span class="test-name">Plaintext leakage</span><span class="test-pass">Zero ✓</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="card" style="margin-bottom: 16px;">
+      <div class="card-title">⭐ Key Features</div>
+      <ul class="bullet-list">
+        <li><span class="bullet-icon">🔒</span> End-to-end encryption — every message encrypted on sender's device using Fernet (AES-128-CBC) before transmission</li>
+        <li><span class="bullet-icon">🔑</span> RSA-2048 key exchange — session key shared securely using asymmetric encryption, preventing MITM attacks</li>
+        <li><span class="bullet-icon">👤</span> Secure authentication — bcrypt hashed passwords + JWT token-based session management</li>
+        <li><span class="bullet-icon">🗄️</span> MySQL database with 3 normalised tables — signup, login, and chat rooms with public/private room support</li>
+        <li><span class="bullet-icon">🛡️</span> Security hardened — protected against SQL injection and XSS attacks through input validation and sanitisation</li>
+        <li><span class="bullet-icon">📊</span> Load tested with Apache JMeter — stable at 1,000 concurrent users with 220ms average response time</li>
+      </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <span>👩‍💻 Eluri Sandhya (23B21F00E9) · MCA · KIET, JNTU-K · 2024–2025</span>
+      <span>✉️ sandhyaeluri26@gmail.com</span>
+    </div>
+
+  </div>
+</body>
+</html>
