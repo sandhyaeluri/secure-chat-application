@@ -11,7 +11,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-link.streamlit.app)
 
-> Replace the link above after deploying on Streamlit Cloud
+> (https://secure-chat-application-jkjacwfpvtgxykhhjrukfy.streamlit.app/)
 
 ---
 
@@ -46,7 +46,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 | Chat Window | Encryption Demo |
 |---|---|
-| *(add screenshot here)* | *(add screenshot here)* |
+| ![Chat Window](screenshots/chat_window.png) | ![Encryption Demo](screenshots/encryption_demo.png) |
 
 ---
 
@@ -54,7 +54,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 **Step 1 — Clone the repository**
 ```bash
-git clone https://github.com/YOUR-USERNAME/secure-chat-application.git
+git clone https://github.com/sandhyaeluri/secure-chat-application.git
 cd secure-chat-application
 ```
 
@@ -136,4 +136,7 @@ secure-chat-application/
 **Eluri Sandhya**  
 MCA — Kakinada Institute of Engineering & Technology, JNTU-K  
 📧 sandhyaeluri26@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile)
+🔗 [linkedin](https://www.linkedin.com/in/sandhya-eluri)
+
+
+
