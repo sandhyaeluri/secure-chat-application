@@ -9,7 +9,7 @@ Messages are encrypted using **Fernet (AES-128-CBC)** and the session key is exc
 
 ## 🚀 Live Demo
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://https://secure-chat-application-abc1234.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://secure-chat-application-abc1234.streamlit.app/)
 
 ---
 
